@@ -1,17 +1,18 @@
-three_letter_words [
+three_letter_words = [
   "eat",
   "ate",
   "bye"
   ]
 
-four_letter_words [
+four_letter_words = [
   "four",
   "door",
   "dent"
 ]
 
-five_lever_words [
+five_letter_words = [
   "hello",
   "fizzy",
   "watch"
 ]
+

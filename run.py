@@ -1,12 +1,11 @@
 import random
+import string
 import hangman_words
 import hangman_art
-import string
 
 
 
-chosen_4_letter_word = random.choice(hangman_words.four_letter_words)
-chosen_5_letter_word = random.choice(hangman_words.five_letter_words)
+
 
 
 # print(chosen_4_letter_word)
@@ -79,24 +78,22 @@ def three_word_game():
     Will show blanks to the user for the user to guess.
     """
     chosen_word = random.choice(hangman_words.three_letter_words).upper()
-    # So I can test game. Will delete later.
-    print("\n")
     print(chosen_word)
-    print("\n")
-    print("_ _ _")
-    print("\n")
-    user_guess()
-
-
-def user_guess():
-    """
-    Allows the user to guess
-    """
     user_input = input("Guess a letter: ").upper()
     print(user_input)
+    display = []
+    for letter in chosen_word:
+        display += "_"
+    print(display)
+    for position in range(len(chosen_word)):
+        letter = chosen_word[position]
+        if letter == user_input:
+            display[position] = letter
+    print(display)
     if user_input not in string.ascii_letters:
         print(f"{user_input} is invalid. Please enter a letter")
-    elif user_input in range(0, 1000):
-        print("INVALID")
+    user_input = input("Guess a letter: ").upper()
+    
+
 
 start_game()

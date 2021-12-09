@@ -79,21 +79,31 @@ def three_word_game():
     """
     chosen_word = random.choice(hangman_words.three_letter_words).upper()
     print(chosen_word)
-    user_input = input("Guess a letter: ").upper()
-    print(user_input)
+
     display = []
     for letter in chosen_word:
         display += "_"
-    print(display)
-    for position in range(len(chosen_word)):
-        letter = chosen_word[position]
-        if letter == user_input:
-            display[position] = letter
-    print(display)
-    if user_input not in string.ascii_letters:
-        print(f"{user_input} is invalid. Please enter a letter")
-    user_input = input("Guess a letter: ").upper()
-    
+
+    is_game_over = False
+    while not is_game_over:    
+        user_input = input("Guess a letter: ").upper()
+        print(user_input)
+
+        for position in range(len(chosen_word)):
+            letter = chosen_word[position]
+            if letter == user_input:
+                display[position] = letter
+        print(display)
+
+        if user_input not in string.ascii_letters:
+            print(f"{user_input} is invalid. Please enter a letter")
+            user_input = input("Guess a letter: ").upper()
+        
+        if "_" not in display:
+            is_game_over = True
+            print("You Win")
+
+
 
 
 start_game()

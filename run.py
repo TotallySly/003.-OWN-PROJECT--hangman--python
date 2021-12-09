@@ -60,12 +60,12 @@ def how_many_letters():
     elif letter_amount == "4":
         print("You selected to play with 4 letters.")
         print("\n")
-        # random_4_word()
+        four_word_game()
         # Function to show ____ to the user....
     elif letter_amount == "5":
         print("\n")
         print("You selected to play with 5 letters")
-        # random_5_word()
+        five_letter_game()
         # Function to show ____ to the user....
     else:
         print("You did not type a valid game amount. Try again")
@@ -76,8 +76,92 @@ def three_word_game():
     """
     Will generate a random three letter word for the user to guess.
     Will show blanks to the user for the user to guess.
+    Checks the if user input is valid using ascii characters.
+    While loop whilst game is not over, until the user loses all lives.
     """
     chosen_word = random.choice(hangman_words.three_letter_words).upper()
+    print(chosen_word)
+
+    display = []
+    for letter in chosen_word:
+        display += "_"
+
+    is_game_over = False
+    lives = 6
+    while not is_game_over:    
+        user_input = input("Guess a letter: ").upper()
+        print(user_input)
+
+        for position in range(len(chosen_word)):
+            letter = chosen_word[position]
+            if letter == user_input:
+                display[position] = letter
+        print(display)
+
+        if user_input not in string.ascii_letters:
+            print(f"{user_input} is invalid. Please enter a letter")
+            user_input = input("Guess a letter: ").upper()
+        if user_input not in chosen_word:
+            lives -= 1
+            print(lives)
+            if lives == 0:
+                is_game_over = True
+                print("Game Over")
+        
+        if "_" not in display:
+            is_game_over = True
+            print("You Win")
+
+
+def four_word_game():
+    """
+    Will generate a random four letter word for the user to guess.
+    Will show blanks to the user for the user to guess.
+    Checks the if user input is valid using ascii characters.
+    While loop whilst game is not over, until the user loses all lives.
+    """
+    chosen_word = random.choice(hangman_words.four_letter_words).upper()
+    print(chosen_word)
+
+    display = []
+    for letter in chosen_word:
+        display += "_"
+
+    is_game_over = False
+    lives = 6
+    while not is_game_over:    
+        user_input = input("Guess a letter: ").upper()
+        print(user_input)
+
+        for position in range(len(chosen_word)):
+            letter = chosen_word[position]
+            if letter == user_input:
+                display[position] = letter
+        print(display)
+
+        if user_input not in string.ascii_letters:
+            print(f"{user_input} is invalid. Please enter a letter")
+            user_input = input("Guess a letter: ").upper()
+        if user_input not in chosen_word:
+            lives -= 1
+            print(lives)
+            if lives == 0:
+                is_game_over = True
+                print("Game Over")
+        
+        if "_" not in display:
+            is_game_over = True
+            print("You Win")
+
+
+def five_word_game():
+    """
+    Will generate a random five letter word for the user to guess.
+    Will show blanks to the user for the user to guess.
+    Checks the if user input is valid using ascii characters.
+    While loop whilst game is not over, until the user loses all lives.
+    """
+    chosen_word = random.choice(hangman_words.five_letter_words).upper()
     print(chosen_word)
 
     display = []

@@ -33,7 +33,7 @@ def start_game():
         print("\n")
         print("Let's Play HANGMAN")
         print("\n")
-        how_many()
+        how_many_letters()
     elif plays_game == "N":
         print("That is too bad, see ya!")
     else:
@@ -42,7 +42,7 @@ def start_game():
 
 
 # Maybe change function to play game? A lot of functions could be added to IF
-def how_many():
+def how_many_letters():
     """
     Asks the user if they want to play with three, four, or five letter words.
     Validates the user response of user input is anything other than
@@ -69,7 +69,7 @@ def how_many():
         # Function to show ____ to the user....
     else:
         print("You did not type a valid game amount. Try again")
-        how_many()
+        how_many_letters()
 
 
 def three_word_game():
@@ -85,6 +85,7 @@ def three_word_game():
         display += "_"
 
     is_game_over = False
+    lives = 6
     while not is_game_over:    
         user_input = input("Guess a letter: ").upper()
         print(user_input)
@@ -98,6 +99,12 @@ def three_word_game():
         if user_input not in string.ascii_letters:
             print(f"{user_input} is invalid. Please enter a letter")
             user_input = input("Guess a letter: ").upper()
+        if user_input not in chosen_word:
+            lives -= 1
+            print(lives)
+            if lives == 0:
+                is_game_over = True
+                print("Game Over")
         
         if "_" not in display:
             is_game_over = True

@@ -70,6 +70,7 @@ def how_many():
         how_many()
 
 
+# Might have to change name of function to 3 letter game????
 def random_3_word():
     """
     Will generate a random three letter word for the user to guess.
@@ -82,6 +83,7 @@ def random_3_word():
     print(show_blanks)
 
 
+# Might have to change name of function to 4 letter game????
 def random_4_word():
     """
     Will generate a random four letter word for the user to guess.
@@ -94,6 +96,7 @@ def random_4_word():
     print(show_blanks)
 
 
+# Might have to change name of function to 5 letter game????
 def random_5_word():
     """
     Will generate a random five letter word for the user to guess.
@@ -106,12 +109,4 @@ def random_5_word():
     print(show_blanks)
 
 
-# def show_blanks():
-#     show_blanks = []
-#     for letter in chosen_word:
-#         show_blanks += "_"
-#     print(show_blanks)
-
-
-# show_blanks()
 start_game()

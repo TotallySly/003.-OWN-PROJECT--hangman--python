@@ -1,6 +1,8 @@
 import random
 import hangman_words
 import hangman_art
+import string
+
 
 
 chosen_4_letter_word = random.choice(hangman_words.four_letter_words)
@@ -39,6 +41,7 @@ def start_game():
         print("That isn't a valid response")
         start_game()
 
+
 # Maybe change function to play game? A lot of functions could be added to IF
 def how_many():
     """
@@ -58,12 +61,12 @@ def how_many():
     elif letter_amount == "4":
         print("You selected to play with 4 letters.")
         print("\n")
-        random_4_word()
+        # random_4_word()
         # Function to show ____ to the user....
     elif letter_amount == "5":
         print("\n")
         print("You selected to play with 5 letters")
-        random_5_word()
+        # random_5_word()
         # Function to show ____ to the user....
     else:
         print("You did not type a valid game amount. Try again")
@@ -82,42 +85,18 @@ def three_word_game():
     print("\n")
     print("_ _ _")
     print("\n")
-    user_guess = input("Guess a letter: ").upper()
-
-    # show_blanks = []
-    # for letter in chosen_word:
-    #     show_blanks += "_"
-    
+    user_guess()
 
 
-# Might have to change name of function to 4 letter game????
-def random_4_word():
+def user_guess():
     """
-    Will generate a random four letter word for the user to guess.
-    Will show blanks to the user for the user to guess.
+    Allows the user to guess
     """
-    chosen_word = random.choice(hangman_words.four_letter_words)
-    print(chosen_word)
-
-    show_blanks = []
-    for letter in chosen_word:
-        show_blanks += "_"
-    print(show_blanks)
-
-
-# Might have to change name of function to 5 letter game????
-def random_5_word():
-    """
-    Will generate a random five letter word for the user to guess.
-    Will show blanks to the user for the user to guess.
-    """
-    chosen_word = random.choice(hangman_words.five_letter_words)
-    print(chosen_word)
-
-    show_blanks = []
-    for letter in chosen_word:
-        show_blanks += "_"
-    print(show_blanks)
-
+    user_input = input("Guess a letter: ").upper()
+    print(user_input)
+    if user_input not in string.ascii_letters:
+        print(f"{user_input} is invalid. Please enter a letter")
+    elif user_input in range(0, 1000):
+        print("INVALID")
 
 start_game()

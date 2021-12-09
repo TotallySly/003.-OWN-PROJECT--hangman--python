@@ -53,7 +53,7 @@ def how_many():
     if letter_amount == "3":
         print("You selected to play with 3 letters.")
         print("\n")
-        random_3_word()
+        three_word_game()
         # Function to show ___ to the user....
     elif letter_amount == "4":
         print("You selected to play with 4 letters.")
@@ -70,26 +70,35 @@ def how_many():
         how_many()
 
 
-# Might have to change name of function to 3 letter game????
-def random_3_word():
+def three_word_game():
     """
     Will generate a random three letter word for the user to guess.
+    Will show blanks to the user for the user to guess.
     """
-    chosen_word = random.choice(hangman_words.three_letter_words)
+    chosen_word = random.choice(hangman_words.three_letter_words).upper()
+    # So I can test game. Will delete later.
+    print("\n")
     print(chosen_word)
-    show_blanks = []
-    for letter in chosen_word:
-        show_blanks += "_"
-    print(show_blanks)
+    print("\n")
+    print("_ _ _")
+    print("\n")
+    user_guess = input("Guess a letter: ").upper()
+
+    # show_blanks = []
+    # for letter in chosen_word:
+    #     show_blanks += "_"
+    
 
 
 # Might have to change name of function to 4 letter game????
 def random_4_word():
     """
     Will generate a random four letter word for the user to guess.
+    Will show blanks to the user for the user to guess.
     """
     chosen_word = random.choice(hangman_words.four_letter_words)
     print(chosen_word)
+
     show_blanks = []
     for letter in chosen_word:
         show_blanks += "_"
@@ -100,9 +109,11 @@ def random_4_word():
 def random_5_word():
     """
     Will generate a random five letter word for the user to guess.
+    Will show blanks to the user for the user to guess.
     """
     chosen_word = random.choice(hangman_words.five_letter_words)
     print(chosen_word)
+
     show_blanks = []
     for letter in chosen_word:
         show_blanks += "_"

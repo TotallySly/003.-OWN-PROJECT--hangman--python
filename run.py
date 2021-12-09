@@ -17,6 +17,9 @@ print("The rules of the game are simple.")
 print("Guess the word before the man is hanged.")
 print("\n")
 
+# Maybe require a while loop for playing the game????
+# While game_over = false, play the game????
+
 
 def start_game():
     """
@@ -36,7 +39,7 @@ def start_game():
         print("That isn't a valid response")
         start_game()
 
-
+# Maybe change function to play game? A lot of functions could be added to IF
 def how_many():
     """
     Asks the user if they want to play with three, four, or five letter words.
@@ -51,16 +54,17 @@ def how_many():
         print("You selected to play with 3 letters.")
         print("\n")
         random_3_word()
+        # Function to show ___ to the user....
     elif letter_amount == "4":
         print("You selected to play with 4 letters.")
         print("\n")
         random_4_word()
-        # Four Letter Word function
+        # Function to show ____ to the user....
     elif letter_amount == "5":
         print("\n")
         print("You selected to play with 5 letters")
         random_5_word()
-        # Five Letter Word function
+        # Function to show ____ to the user....
     else:
         print("You did not type a valid game amount. Try again")
         how_many()
@@ -72,6 +76,10 @@ def random_3_word():
     """
     chosen_word = random.choice(hangman_words.three_letter_words)
     print(chosen_word)
+    show_blanks = []
+    for letter in chosen_word:
+        show_blanks += "_"
+    print(show_blanks)
 
 
 def random_4_word():
@@ -80,6 +88,10 @@ def random_4_word():
     """
     chosen_word = random.choice(hangman_words.four_letter_words)
     print(chosen_word)
+    show_blanks = []
+    for letter in chosen_word:
+        show_blanks += "_"
+    print(show_blanks)
 
 
 def random_5_word():
@@ -88,6 +100,18 @@ def random_5_word():
     """
     chosen_word = random.choice(hangman_words.five_letter_words)
     print(chosen_word)
+    show_blanks = []
+    for letter in chosen_word:
+        show_blanks += "_"
+    print(show_blanks)
 
 
+# def show_blanks():
+#     show_blanks = []
+#     for letter in chosen_word:
+#         show_blanks += "_"
+#     print(show_blanks)
+
+
+# show_blanks()
 start_game()

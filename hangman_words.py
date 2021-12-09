@@ -15,4 +15,3 @@ five_letter_words = [
   "fizzy",
   "watch"
 ]
-

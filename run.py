@@ -105,8 +105,8 @@ def three_word_game():
             lives -= 1
             print(lives)
             if lives < 6:
-                print(f"You have {lives} left") # ASCII ART HERE. F STRING LIVES AMOUNT
-                print(f"{hangman_art.hangman_lives[lives]} ") # some form of loop required......
+                print(f"You have {lives} left")
+                print(f"{hangman_art.hangman_lives[lives]} ")
             if lives == 0:
                 is_game_over = True
                 print("Game Over")   
@@ -148,8 +148,8 @@ def four_word_game():
             lives -= 1
             print(lives)
             if lives < 6:
-                print(f"You have {lives} left") # ASCII ART HERE. F STRING LIVES AMOUNT
-                
+                print(f"You have {lives} left")
+                print(f"{hangman_art.hangman_lives[lives]} ")
             if lives == 0:
                 is_game_over = True
                 print("Game Over")
@@ -191,7 +191,8 @@ def five_word_game():
             lives -= 1
             print(lives)
             if lives < 6:
-                print(f"You have {lives} left") # ASCII ART HERE. F STRING LIVES AMOUNT
+                print(f"You have {lives} left")
+                print(f"{hangman_art.hangman_lives[lives]} ")
             if lives == 0:
                 is_game_over = True
                 print("Game Over")

@@ -72,29 +72,38 @@ def three_word_game():
         display += "_"
 
     is_game_over = False
+    user_guesses = []
     lives = 6
     while not is_game_over:    
         user_input = input("Guess a letter: ").upper()
-        print(user_input)
+        print("\n")
 
         for position in range(len(chosen_word)):
             letter = chosen_word[position]
             if letter == user_input:
                 display[position] = letter
         print(display)
+        print("\n")
 
         if user_input not in string.ascii_letters:
             print(f"{user_input} is invalid. Please enter a letter")
             user_input = input("Guess a letter: ").upper()
+            
         if user_input not in chosen_word:
             lives -= 1
-            print(lives)
+            user_guesses.append(user_input)
+            
+        if user_input in user_guesses:
+            print("\n")
+            print(f"Here is a list of guessed letters: \n {user_guesses}")
+            print("\n")
+
             if lives < 6:
-                print(f"You have {lives} left")
+                print(f"You have {lives} lives left")
                 print(f"{hangman_art.hangman_lives[lives]} ")
             if lives == 0:
                 is_game_over = True
-                print("Game Over")   
+                print("Game Over")
         if "_" not in display:
             is_game_over = True
             print("You Win")

@@ -87,15 +87,17 @@ def three_word_game():
         print(f"You have {lives} lives left")
         print("\n")
         print(f"{hangman_art.hangman_lives[lives]} ")
+        print("\n")
+        print(f"Here is a list of guessed letters: \n {user_guesses}")
 
         if user_input not in string.ascii_letters:
             print(f"{user_input} is invalid. Please enter a letter")
             user_input = input("Guess a letter: ").upper()
-            
-        if user_input not in chosen_word:
+        elif user_input not in chosen_word:
             lives -= 1
+            print(f"{user_input} is not in the word.")
             user_guesses.append(user_input)
-            
+
         if user_input in user_guesses:
             print("\n")
             print(f"Here is a list of guessed letters: \n {user_guesses}")
@@ -107,6 +109,7 @@ def three_word_game():
             if lives == 0:
                 is_game_over = True
                 print("Game Over")
+
         if "_" not in display:
             is_game_over = True
             print("You Win")
@@ -114,12 +117,12 @@ def three_word_game():
 
 def four_word_game():
     """
-    Will generate a random four letter word for the user to guess.
+    Will generate a random three letter word for the user to guess.
     Will show blanks to the user for the user to guess.
     Checks the if user input is valid using ascii characters.
     While loop whilst game is not over, until the user loses all lives.
     """
-    chosen_word = random.choice(hangman_words.three_letter_words).upper()
+    chosen_word = random.choice(hangman_words.four_letter_words).upper()
     print(chosen_word)
 
     display = []
@@ -142,15 +145,17 @@ def four_word_game():
         print(f"You have {lives} lives left")
         print("\n")
         print(f"{hangman_art.hangman_lives[lives]} ")
+        print("\n")
+        print(f"Here is a list of guessed letters: \n {user_guesses}")
 
         if user_input not in string.ascii_letters:
             print(f"{user_input} is invalid. Please enter a letter")
             user_input = input("Guess a letter: ").upper()
-            
-        if user_input not in chosen_word:
+        elif user_input not in chosen_word:
             lives -= 1
+            print(f"{user_input} is not in the word.")
             user_guesses.append(user_input)
-            
+
         if user_input in user_guesses:
             print("\n")
             print(f"Here is a list of guessed letters: \n {user_guesses}")
@@ -162,19 +167,20 @@ def four_word_game():
             if lives == 0:
                 is_game_over = True
                 print("Game Over")
+                
         if "_" not in display:
             is_game_over = True
             print("You Win")
 
 
 def five_word_game():
-        """
+    """
     Will generate a random three letter word for the user to guess.
     Will show blanks to the user for the user to guess.
     Checks the if user input is valid using ascii characters.
     While loop whilst game is not over, until the user loses all lives.
     """
-    chosen_word = random.choice(hangman_words.three_letter_words).upper()
+    chosen_word = random.choice(hangman_words.five_letter_words).upper()
     print(chosen_word)
 
     display = []
@@ -197,15 +203,17 @@ def five_word_game():
         print(f"You have {lives} lives left")
         print("\n")
         print(f"{hangman_art.hangman_lives[lives]} ")
+        print("\n")
+        print(f"Here is a list of guessed letters: \n {user_guesses}")
 
         if user_input not in string.ascii_letters:
             print(f"{user_input} is invalid. Please enter a letter")
             user_input = input("Guess a letter: ").upper()
-            
-        if user_input not in chosen_word:
+        elif user_input not in chosen_word:
             lives -= 1
+            print(f"{user_input} is not in the word.")
             user_guesses.append(user_input)
-            
+
         if user_input in user_guesses:
             print("\n")
             print(f"Here is a list of guessed letters: \n {user_guesses}")
@@ -217,8 +225,10 @@ def five_word_game():
             if lives == 0:
                 is_game_over = True
                 print("Game Over")
+                
         if "_" not in display:
             is_game_over = True
             print("You Win")
  
+
 start_game()

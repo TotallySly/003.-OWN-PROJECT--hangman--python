@@ -104,10 +104,11 @@ def three_word_game():
         if user_input not in chosen_word:
             lives -= 1
             print(lives)
+            if lives < 6:
+                print("You have LIVES")
             if lives == 0:
                 is_game_over = True
-                print("Game Over")
-        
+                print("Game Over")   
         if "_" not in display:
             is_game_over = True
             print("You Win")
@@ -129,7 +130,7 @@ def four_word_game():
 
     is_game_over = False
     lives = 6
-    while not is_game_over:    
+    while not is_game_over:   
         user_input = input("Guess a letter: ").upper()
         print(user_input)
 
@@ -148,7 +149,6 @@ def four_word_game():
             if lives == 0:
                 is_game_over = True
                 print("Game Over")
-        
         if "_" not in display:
             is_game_over = True
             print("You Win")
@@ -170,7 +170,7 @@ def five_word_game():
 
     is_game_over = False
     lives = 6
-    while not is_game_over:    
+    while not is_game_over: 
         user_input = input("Guess a letter: ").upper()
         print(user_input)
 
@@ -189,7 +189,6 @@ def five_word_game():
             if lives == 0:
                 is_game_over = True
                 print("Game Over")
-        
         if "_" not in display:
             is_game_over = True
             print("You Win")

@@ -106,7 +106,7 @@ def three_word_game():
             print(lives)
             if lives < 6:
                 print(f"You have {lives} left") # ASCII ART HERE. F STRING LIVES AMOUNT
-                print(f"{hangman_art.hangman_lives[6]} ") # some form of loop required......
+                print(f"{hangman_art.hangman_lives[lives]} ") # some form of loop required......
             if lives == 0:
                 is_game_over = True
                 print("Game Over")   

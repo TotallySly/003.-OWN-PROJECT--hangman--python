@@ -146,6 +146,8 @@ def four_word_game():
         if user_input not in chosen_word:
             lives -= 1
             print(lives)
+            if lives < 6:
+                print(f"You have {lives} left") # ASCII ART HERE. F STRING LIVES AMOUNT
             if lives == 0:
                 is_game_over = True
                 print("Game Over")
@@ -186,6 +188,8 @@ def five_word_game():
         if user_input not in chosen_word:
             lives -= 1
             print(lives)
+            if lives < 6:
+                print(f"You have {lives} left") # ASCII ART HERE. F STRING LIVES AMOUNT
             if lives == 0:
                 is_game_over = True
                 print("Game Over")

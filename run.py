@@ -37,7 +37,7 @@ def how_many_letters():
     "3", "4" or "5".
     """
     # I need to find a way to shorten line 46 as line is too long.
-    letter_amount = input("Would you like to play with 3, 4 or 5 letters? < 3, 4, 5 >: ")
+    letter_amount = input("Would you like to play with 3, 4, 5 letters? < 3, 4, 5 >: ")
     print("\n")
 
     if letter_amount == "3":
@@ -229,7 +229,7 @@ def five_word_game():
         if "_" not in display:
             is_game_over = True
             print("You Win")
- 
+
 
 start_game()
 
@@ -239,7 +239,6 @@ start_game()
 
 # GAME OVER ASCII ART
 # DELETE THE CODE THAT DISPLAYS THE WORD TO THE USER
-# ADD MORE THREE, FOUR AND FIVE LETTER WORDS TO THE LIST
 # A RANDOM WORD AMOUNT GAME AS WELL.
 #
 # MAYBE CLEAR SCREEN?????

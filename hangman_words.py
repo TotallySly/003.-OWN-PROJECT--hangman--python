@@ -55,26 +55,3 @@ five_letter_words = [
   "jazzy",
   "watch"
 ]
-
-random_letter_words = [
-  "mat",
-  "cup",
-  "cap",
-  "jog",
-  "sap",
-  "tap",
-  "pat",
-  "bag",
-  "book",
-  "hook",
-  "year",
-  "jazz",
-  "kids",
-  "snow",
-  "dope",
-  "sugar",
-  "house",
-  "water",
-  "jazzy",
-  "watch"
-]

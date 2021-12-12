@@ -116,8 +116,10 @@ def three_word_game():
             play_again = input("Would you like to play again? < Y or N >: ").upper()
             if play_again == "Y":
                 start_game()
-            else:
+            elif play_again == "N":
                 print("Okay, hope to play again soon.")
+            else:
+                print("That is a not a valid response.")
 
 
 def four_word_game():
@@ -179,8 +181,10 @@ def four_word_game():
             play_again = input("Would you like to play again? < Y or N >: ").upper()
             if play_again == "Y":
                 start_game()
-            else:
+            elif play_again == "N":
                 print("Okay, hope to play again soon.")
+            else:
+                print("That is a not a valid response.")
 
 
 def five_word_game():
@@ -242,8 +246,10 @@ def five_word_game():
             play_again = input("Would you like to play again? < Y or N >: ").upper()
             if play_again == "Y":
                 start_game()
-            else:
+            elif play_again == "N":
                 print("Okay, hope to play again soon.")
+            else:
+                print("That is a not a valid response.")
 
 
 start_game()

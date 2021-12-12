@@ -40,7 +40,6 @@ def how_many_letters():
     "3", "4" or "5".
     """
 
-    # I need to find a way to shorten line 46 as line is too long.
     letter_amount = input("Would you like to play with 3, 4, 5 letters? < 3, 4, 5 >: ")
     print("\n")
 

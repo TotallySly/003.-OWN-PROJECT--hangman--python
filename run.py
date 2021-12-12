@@ -13,7 +13,7 @@ print("\n")
 
 def start_game():
     """
-    Starts the game and asks the user what they would like to be called.
+    Starts the game.
     Validates the user response regarding wanting to play the game.
     """
 
@@ -39,6 +39,7 @@ def how_many_letters():
     Validates the user response of user input is anything other than
     "3", "4" or "5".
     """
+
     # I need to find a way to shorten line 46 as line is too long.
     letter_amount = input("Would you like to play with 3, 4, 5 letters? < 3, 4, 5 >: ")
     print("\n")
@@ -69,7 +70,11 @@ def three_word_game():
     Will generate a random three letter word for the user to guess.
     Will show blanks to the user for the user to guess.
     Checks the if user input is valid using ascii characters.
-    While loop whilst game is not over, until the user loses all lives.
+    While loop whilst game is not over, until the user loses all lives or wins the game
+    Shows the user a list of already guessed letters.
+    Displays each correctly guessed letter in its correct position.
+    Displays ascii art of each stage of life the user may, or may not be, at whilst playing the game.
+    Asks the user if they would like to play again if they win or lose.
     """
     chosen_word = random.choice(hangman_words.three_letter_words).upper()
     print(chosen_word)
@@ -140,10 +145,13 @@ def three_word_game():
 
 def four_word_game():
     """
-    Will generate a random three letter word for the user to guess.
     Will show blanks to the user for the user to guess.
     Checks the if user input is valid using ascii characters.
-    While loop whilst game is not over, until the user loses all lives.
+    While loop whilst game is not over, until the user loses all lives or wins the game
+    Shows the user a list of already guessed letters.
+    Displays each correctly guessed letter in its correct position.
+    Displays ascii art of each stage of life the user may, or may not be, at whilst playing the game.
+    Asks the user if they would like to play again if they win or lose.
     """
     chosen_word = random.choice(hangman_words.four_letter_words).upper()
     print(chosen_word)
@@ -214,9 +222,12 @@ def four_word_game():
 def five_word_game():
     """
     Will generate a random three letter word for the user to guess.
-    Will show blanks to the user for the user to guess.
     Checks the if user input is valid using ascii characters.
-    While loop whilst game is not over, until the user loses all lives.
+    While loop whilst game is not over, until the user loses all lives or wins the game
+    Shows the user a list of already guessed letters.
+    Displays each correctly guessed letter in its correct position.
+    Displays ascii art of each stage of life the user may, or may not be, at whilst playing the game.
+    Asks the user if they would like to play again if they win or lose.
     """
     chosen_word = random.choice(hangman_words.five_letter_words).upper()
     print(chosen_word)

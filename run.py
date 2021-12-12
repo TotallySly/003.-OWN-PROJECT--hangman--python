@@ -40,7 +40,9 @@ def how_many_letters():
     "3", "4" or "5".
     """
 
-    letter_amount = input("Would you like to play with 3, 4, 5 letters? < 3, 4, 5 >:\n")
+    letter_amount = (
+        input("Would you like to play with 3, 4, 5 letters? < 3, 4, 5 >:\n")
+        )
     print("\n")
 
     if letter_amount == "3":
@@ -69,14 +71,15 @@ def three_word_game():
     Will generate a random three letter word for the user to guess.
     Will show blanks to the user for the user to guess.
     Checks the if user input is valid using ascii characters.
-    While loop whilst game is not over, until the user loses all lives or wins the game
+    While loop whilst game is not over, until the user loses all lives
+    or wins the game
     Shows the user a list of already guessed letters.
     Displays each correctly guessed letter in its correct position.
-    Displays ascii art of each stage of life the user may, or may not be, at whilst playing the game.
+    Displays ascii art of each stage of life the user may, or may not be,
+    at whilst playing the game.
     Asks the user if they would like to play again if they win or lose.
     """
     chosen_word = random.choice(hangman_words.three_letter_words).upper()
-    print(chosen_word)
 
     display = []
     for letter in chosen_word:
@@ -86,7 +89,7 @@ def three_word_game():
     user_guesses = []
     lives = 6
     while not is_game_over:
-        print("\n")  
+        print("\n")
         user_input = input("Guess a letter:\n").upper()
         print("\n")
 
@@ -146,14 +149,15 @@ def four_word_game():
     """
     Will show blanks to the user for the user to guess.
     Checks the if user input is valid using ascii characters.
-    While loop whilst game is not over, until the user loses all lives or wins the game
+    While loop whilst game is not over, until the user loses all lives or
+    wins the game
     Shows the user a list of already guessed letters.
     Displays each correctly guessed letter in its correct position.
-    Displays ascii art of each stage of life the user may, or may not be, at whilst playing the game.
+    Displays ascii art of each stage of life the user may, or may not be,
+    at whilst playing the game.
     Asks the user if they would like to play again if they win or lose.
     """
     chosen_word = random.choice(hangman_words.four_letter_words).upper()
-    print(chosen_word)
 
     display = []
     for letter in chosen_word:
@@ -163,7 +167,7 @@ def four_word_game():
     user_guesses = []
     lives = 6
     while not is_game_over:
-        print("\n")   
+        print("\n")
         user_input = input("Guess a letter:\n").upper()
         print("\n")
 
@@ -209,7 +213,7 @@ def four_word_game():
                 print("Game Over")
                 print("\n")
                 start_game()
-                
+
         if "_" not in display:
             is_game_over = True
             print("\n")
@@ -222,14 +226,15 @@ def five_word_game():
     """
     Will generate a random three letter word for the user to guess.
     Checks the if user input is valid using ascii characters.
-    While loop whilst game is not over, until the user loses all lives or wins the game
+    While loop whilst game is not over, until the user loses all lives or
+    wins the game
     Shows the user a list of already guessed letters.
     Displays each correctly guessed letter in its correct position.
-    Displays ascii art of each stage of life the user may, or may not be, at whilst playing the game.
+    Displays ascii art of each stage of life the user may, or may not be,
+    at whilst playing the game.
     Asks the user if they would like to play again if they win or lose.
     """
     chosen_word = random.choice(hangman_words.five_letter_words).upper()
-    print(chosen_word)
 
     display = []
     for letter in chosen_word:
@@ -238,8 +243,8 @@ def five_word_game():
     is_game_over = False
     user_guesses = []
     lives = 6
-    while not is_game_over: 
-        print("\n")   
+    while not is_game_over:
+        print("\n")
         user_input = input("Guess a letter:\n").upper()
         print("\n")
 
@@ -286,7 +291,7 @@ def five_word_game():
                 print("Game Over")
                 print("\n")
                 start_game()
-                
+
         if "_" not in display:
             is_game_over = True
             print("\n")
@@ -296,5 +301,3 @@ def five_word_game():
 
 
 start_game()
-
-

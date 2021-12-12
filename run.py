@@ -17,7 +17,7 @@ def start_game():
     Validates the user response regarding wanting to play the game.
     """
 
-    plays_game = input("Would you like to play Hangman? < Y or N >: ").upper()
+    plays_game = input("Would you like to play Hangman? < Y or N >:\n").upper()
     if plays_game == "Y":
         print("\n")
         print("Let's Play HANGMAN")
@@ -40,7 +40,7 @@ def how_many_letters():
     "3", "4" or "5".
     """
 
-    letter_amount = input("Would you like to play with 3, 4, 5 letters? < 3, 4, 5 >: ")
+    letter_amount = input("Would you like to play with 3, 4, 5 letters? < 3, 4, 5 >:\n")
     print("\n")
 
     if letter_amount == "3":
@@ -86,8 +86,8 @@ def three_word_game():
     user_guesses = []
     lives = 6
     while not is_game_over:
-        print("\n")    
-        user_input = input("Guess a letter: ").upper()
+        print("\n")  
+        user_input = input("Guess a letter:\n").upper()
         print("\n")
 
         for position in range(len(chosen_word)):
@@ -100,14 +100,14 @@ def three_word_game():
         print("\n")
         print(f"{hangman_art.hangman_lives[lives]} ")
         print("\n")
-        print(f"Here is a list of guessed letters: \n {user_guesses}")
+        print(f"Here is a list of guessed letters: {user_guesses}")
         print("\n")
 
         if user_input not in string.ascii_letters:
             print("\n")
             print(f"{user_input} is invalid. Please enter a letter")
             print("\n")
-            user_input = input("Guess a letter: ").upper()
+            user_input = input("Guess a letter:\n").upper()
             print("\n")
         elif user_input not in chosen_word:
             lives -= 1
@@ -118,7 +118,7 @@ def three_word_game():
 
         if user_input in user_guesses:
             print("\n")
-            print(f"Here is a list of guessed letters: \n {user_guesses}")
+            print(f"Here is a list of guessed letters: {user_guesses}")
             print("\n")
 
             if lives < 6:
@@ -164,7 +164,7 @@ def four_word_game():
     lives = 6
     while not is_game_over:
         print("\n")   
-        user_input = input("Guess a letter: ").upper()
+        user_input = input("Guess a letter:\n").upper()
         print("\n")
 
         for position in range(len(chosen_word)):
@@ -175,16 +175,16 @@ def four_word_game():
         print("\n")
         print(f"You have {lives} lives left")
         print("\n")
-        print(f"{hangman_art.hangman_lives[lives]} ")
+        print(f"{hangman_art.hangman_lives[lives]}")
         print("\n")
-        print(f"Here is a list of guessed letters: \n {user_guesses}")
+        print(f"Here is a list of guessed letters:{user_guesses}")
         print("\n")
 
         if user_input not in string.ascii_letters:
             print("\n")
             print(f"{user_input} is invalid. Please enter a letter")
             print("\n")
-            user_input = input("Guess a letter: ").upper()
+            user_input = input("Guess a letter:\n").upper()
         elif user_input not in chosen_word:
             lives -= 1
             print("\n")
@@ -194,14 +194,14 @@ def four_word_game():
 
         if user_input in user_guesses:
             print("\n")
-            print(f"Here is a list of guessed letters: \n {user_guesses}")
+            print(f"Here is a list of guessed letters: {user_guesses}")
             print("\n")
 
             if lives < 6:
                 print("\n")
                 print(f"You have {lives} lives left")
                 print("\n")
-                print(f"{hangman_art.hangman_lives[lives]} ")
+                print(f"{hangman_art.hangman_lives[lives]}")
                 print("\n")
             if lives == 0:
                 is_game_over = True
@@ -240,7 +240,7 @@ def five_word_game():
     lives = 6
     while not is_game_over: 
         print("\n")   
-        user_input = input("Guess a letter: ").upper()
+        user_input = input("Guess a letter:\n").upper()
         print("\n")
 
         for position in range(len(chosen_word)):
@@ -251,16 +251,16 @@ def five_word_game():
         print("\n")
         print(f"You have {lives} lives left")
         print("\n")
-        print(f"{hangman_art.hangman_lives[lives]} ")
+        print(f"{hangman_art.hangman_lives[lives]}")
         print("\n")
-        print(f"Here is a list of guessed letters: \n {user_guesses}")
+        print(f"Here is a list of guessed letters:{user_guesses}")
         print("\n")
 
         if user_input not in string.ascii_letters:
             print("\n")
             print(f"{user_input} is invalid. Please enter a letter")
             print("\n")
-            user_input = input("Guess a letter: ").upper()
+            user_input = input("Guess a letter:\n").upper()
             print("\n")
         elif user_input not in chosen_word:
             lives -= 1
@@ -271,14 +271,14 @@ def five_word_game():
 
         if user_input in user_guesses:
             print("\n")
-            print(f"Here is a list of guessed letters: \n {user_guesses}")
+            print(f"Here is a list of guessed letters:{user_guesses}")
             print("\n")
 
             if lives < 6:
                 print("\n")
                 print(f"You have {lives} lives left")
                 print("\n")
-                print(f"{hangman_art.hangman_lives[lives]} ")
+                print(f"{hangman_art.hangman_lives[lives]}")
                 print("\n")
             if lives == 0:
                 is_game_over = True
@@ -298,14 +298,3 @@ def five_word_game():
 start_game()
 
 
-
-# TO DO LIST
-
-# GAME OVER ASCII ART
-# DELETE THE CODE THAT DISPLAYS THE WORD TO THE USER
-# A RANDOM WORD AMOUNT GAME AS WELL.
-#
-# MAYBE CLEAR SCREEN?????
-# ASK USER WHAT THEIR NAME IS.
-# WRITE COMMENTS ABOUT CODE
-# WRITE BETTER FUNCTION DESCRIPTIONS

@@ -171,6 +171,11 @@ def four_word_game():
         if "_" not in display:
             is_game_over = True
             print("You Win")
+            play_again = input("Would you like to play again? < Y or N >: ").upper()
+            if play_again == "Y":
+                start_game()
+            else:
+                print("Okay, hope to play again soon.")
 
 
 def five_word_game():

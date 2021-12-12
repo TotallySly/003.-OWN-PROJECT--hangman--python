@@ -24,8 +24,11 @@ def start_game():
         print("\n")
         how_many_letters()
     elif plays_game == "N":
+        print("\n")
         print("That is too bad, see ya!")
+        print("\n")
     else:
+        print("\n")
         print("That isn't a valid response")
         start_game()
 
@@ -41,18 +44,22 @@ def how_many_letters():
     print("\n")
 
     if letter_amount == "3":
+        print("\n")
         print("You selected to play with 3 letters.")
         print("\n")
         three_word_game()
     elif letter_amount == "4":
+        print("\n")
         print("You selected to play with 4 letters.")
         print("\n")
         four_word_game()
     elif letter_amount == "5":
         print("\n")
         print("You selected to play with 5 letters")
+        print("\n")
         five_word_game()
     else:
+        print("\n")
         print("You did not type a valid game amount. Try again")
         how_many_letters()
 
@@ -74,7 +81,8 @@ def three_word_game():
     is_game_over = False
     user_guesses = []
     lives = 6
-    while not is_game_over:    
+    while not is_game_over:
+        print("\n")    
         user_input = input("Guess a letter: ").upper()
         print("\n")
 
@@ -89,13 +97,19 @@ def three_word_game():
         print(f"{hangman_art.hangman_lives[lives]} ")
         print("\n")
         print(f"Here is a list of guessed letters: \n {user_guesses}")
+        print("\n")
 
         if user_input not in string.ascii_letters:
+            print("\n")
             print(f"{user_input} is invalid. Please enter a letter")
+            print("\n")
             user_input = input("Guess a letter: ").upper()
+            print("\n")
         elif user_input not in chosen_word:
             lives -= 1
+            print("\n")
             print(f"{user_input} is not in the word.")
+            print("\n")
             user_guesses.append(user_input)
 
         if user_input in user_guesses:
@@ -104,22 +118,24 @@ def three_word_game():
             print("\n")
 
             if lives < 6:
+                print("\n")
                 print(f"You have {lives} lives left")
+                print("\n")
                 print(f"{hangman_art.hangman_lives[lives]} ")
+                print("\n")
             if lives == 0:
                 is_game_over = True
+                print("\n")
                 print("Game Over")
+                print("\n")
+                start_game()
 
         if "_" not in display:
             is_game_over = True
+            print("\n")
             print("You Win")
-            play_again = input("Would you like to play again? < Y or N >: ").upper()
-            if play_again == "Y":
-                start_game()
-            elif play_again == "N":
-                print("Okay, hope to play again soon.")
-            else:
-                print("That is a not a valid response.")
+            print("\n")
+            start_game()
 
 
 def four_word_game():
@@ -139,7 +155,8 @@ def four_word_game():
     is_game_over = False
     user_guesses = []
     lives = 6
-    while not is_game_over:    
+    while not is_game_over:
+        print("\n")   
         user_input = input("Guess a letter: ").upper()
         print("\n")
 
@@ -154,13 +171,18 @@ def four_word_game():
         print(f"{hangman_art.hangman_lives[lives]} ")
         print("\n")
         print(f"Here is a list of guessed letters: \n {user_guesses}")
+        print("\n")
 
         if user_input not in string.ascii_letters:
+            print("\n")
             print(f"{user_input} is invalid. Please enter a letter")
+            print("\n")
             user_input = input("Guess a letter: ").upper()
         elif user_input not in chosen_word:
             lives -= 1
+            print("\n")
             print(f"{user_input} is not in the word.")
+            print("\n")
             user_guesses.append(user_input)
 
         if user_input in user_guesses:
@@ -169,22 +191,24 @@ def four_word_game():
             print("\n")
 
             if lives < 6:
+                print("\n")
                 print(f"You have {lives} lives left")
+                print("\n")
                 print(f"{hangman_art.hangman_lives[lives]} ")
+                print("\n")
             if lives == 0:
                 is_game_over = True
+                print("\n")
                 print("Game Over")
+                print("\n")
+                start_game()
                 
         if "_" not in display:
             is_game_over = True
+            print("\n")
             print("You Win")
-            play_again = input("Would you like to play again? < Y or N >: ").upper()
-            if play_again == "Y":
-                start_game()
-            elif play_again == "N":
-                print("Okay, hope to play again soon.")
-            else:
-                print("That is a not a valid response.")
+            print("\n")
+            start_game()
 
 
 def five_word_game():
@@ -204,7 +228,8 @@ def five_word_game():
     is_game_over = False
     user_guesses = []
     lives = 6
-    while not is_game_over:    
+    while not is_game_over: 
+        print("\n")   
         user_input = input("Guess a letter: ").upper()
         print("\n")
 
@@ -219,13 +244,19 @@ def five_word_game():
         print(f"{hangman_art.hangman_lives[lives]} ")
         print("\n")
         print(f"Here is a list of guessed letters: \n {user_guesses}")
+        print("\n")
 
         if user_input not in string.ascii_letters:
+            print("\n")
             print(f"{user_input} is invalid. Please enter a letter")
+            print("\n")
             user_input = input("Guess a letter: ").upper()
+            print("\n")
         elif user_input not in chosen_word:
             lives -= 1
+            print("\n")
             print(f"{user_input} is not in the word.")
+            print("\n")
             user_guesses.append(user_input)
 
         if user_input in user_guesses:
@@ -234,22 +265,24 @@ def five_word_game():
             print("\n")
 
             if lives < 6:
+                print("\n")
                 print(f"You have {lives} lives left")
+                print("\n")
                 print(f"{hangman_art.hangman_lives[lives]} ")
+                print("\n")
             if lives == 0:
                 is_game_over = True
+                print("\n")
                 print("Game Over")
+                print("\n")
+                start_game()
                 
         if "_" not in display:
             is_game_over = True
+            print("\n")
             print("You Win")
-            play_again = input("Would you like to play again? < Y or N >: ").upper()
-            if play_again == "Y":
-                start_game()
-            elif play_again == "N":
-                print("Okay, hope to play again soon.")
-            else:
-                print("That is a not a valid response.")
+            print("\n")
+            start_game()
 
 
 start_game()

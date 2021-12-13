@@ -122,122 +122,85 @@ I used ASCII Art as the imagery within this project.
 
 ***
 
-#### Coaches & Contact Us
+#### In Game Play (Incorrect)
 
-  - This is to provide users with a quick look at who the coaches are at The English Football Club. It provides a profile photo, mobile contact, and email address.
-  - On tablets and above, there is extra information regarding the coaches. This follows the styling of the 'About Us' section. Quick, bite-sized facts establishing the coaches credentials. Only profile photos, mobile and email contact details are visible for mobile devices. This is to provide the most important information to the user if accessing on a mobile. Also, if a user needs to get in contact with a coach, the information is present without any distracting information.
-  - In keeping with the visual design of this website, the background image is zoomed in. Each coach information is separated within their own box stacked on top of each other. The opaque background allows the content to be visible as a text overlay of the image. Again, maintaining visual design patterns.
+  - After the user makes inputs a guess, a list of guessed letters is shown to the user. This allows the user to see which letters they have guessed throughout the game. This is displayed with the letter is NOT in the word.
 
-![Coaches & Contact Us - Desktop](assets/readme-images/features-coaches-and-contact-us.png)
-![Coaches & Contact Us - Mobile](assets/readme-images/features-coaches-and-contact-us-mobile.png)
+  - The amount of lives left is displayed.
+
+  - The ASCII Art is displayed showcasing the stage of life the user is at.  
+
+![In Game Play](assets/readme-images/ingame.png)
+
 
 ***
 
-#### Prices
+#### In Game Play (Correct)
 
-  - This section was kept simple. It is the continuation of the design pattern, using block colours which alternates with imagery as the user scrolls down the website.  
-  - The attention is to draw the user directly to the price. That is why block colours were chosen. The prices are crystal clear and can be easily seen.
-  - The football icon is a nice break up of the text, whilst also reinforcing the football content.
-  - For mobile devices they stack vertically.
+  - The word is displayed to the user, with the correct letter displayed in the correct position, to the user.
+  - The amount of lives are still displayed to the user.
+  - The ASCII Art of the stages of Hangman are displayed.
+  - A list of guessed letters is still displayed to the user.
+  - Asks the User to guess the letter.
 
-![Prices](assets/readme-images/features-prices.png)
-![Prices - Mobile](assets/readme-images/features-prices-mobile.png)
-
-***
-
-#### Training Times
-
-  - This section is a continuation of the block colour and alternating imagery design pattern. 
-  - This image used a background image, which is a birdseye view of a football match. I specifically wanted an image like this to represent this section. It is a fantastic backdrop for what the children will be playing on during the training sessions.
-  - Like the 'Prices' section, the information is to the point. Dates, location, time and age group are clearly seen.
-  - There is also a Google Map embedded, pinpointing the location of the training session for the user to plan how to get there.
-  - Underneath there is a postal address with the the strong blue background. This was used to really show the information at hand, even if the user is glancing quickly. This was chosen to help the user find the address should they be travelling to the location for the first time. The address can be seen instantly, as we imagine stopping to input the information into a sat nav whilst driving can be a stressful situation!
-  - For Mobile devices, the boxes stack vertically.
-
-![Training Times](assets/readme-images/features-training-times.png)
-![Training Times - Mobile](assets/readme-images/features-training-times-mobile.png)
+![Prices](assets/readme-images/ingame-correct.png)
 
 ***
 
-#### Footer
+#### Win Game
 
-  - The footer matches the same design pattern as the navigation bar.
-  - We chose simple logos, using the same styling, to continue the simple and minimalist feel.  
-  - Each social media page opens up in a new tab. This is to give the user a good experience in accessing a different page, but remaining on our website a the same time.
+- If the winner correctly guesses all the letters, "You Win" is displayed to the user.
+- The user is asked if they would like to play again.
+- If yes, the loop of the game starts again, or it ends if the user inputs no. 
 
+![Win Game](assets/readme-images/wingame.png)
 
-![Footer](assets/readme-images/features-footer.png)
 
 ***
 
-#### Go To Top Button
+#### Lose Game
 
-  - As the main content of our website is a single-page scroll, I implemented a 'up' arrow to allow the user to return to the top of the website. The button is in the same font colour as the website, with the dark blue colour used for the logo. This is to allow the user to clearly see it at all times.
-  - This was used instead of a sticky nav bar, as it is something slightly different. A sticky nav bar would clash with each section title. The background colour of the nav bar and each section is the same. This is to create a nice aesthetic. The sticky nav bar would confuse the user, as it could blend in with the section title.
-  - This feature is only on tablet and above devices.
+  - If the user loses the game, they are asked if they would like to play again. If yes, the loop will start again. If not, the game will end.
 
-![Go To Top Button](assets/readme-images/features-go-to-top-btn.png)
+![Lose Game](assets/readme-images/losegame.png)
 
 ***
 
-#### Sign Up Page
+#### User Validation One
 
-  - The Sign Up form is on a new page. This is to show the importance of the form. It deserves it's own page. After the user has scrolled the main page, they would have the information they seek about whether to sign their child up.
-  - The background image is a fantastic image to be used on this page. It shows children standing around a coach with a clip-board and pen. The form is positioned over the image which give a great design juxtaposition.
-  - The form is simple, and keeps in with the design colours of the main page, for a great user experience.
-  - Form has several required fields. This is to ensure the website owners receive the correct information for the child to join their training sessions.
-  - The mobile design uses the a block colour as the background. This is so the background image doesn't distract the user from the form. This was also used as a way to improve the loading speed for the website. With the image it only scored 73% on Lighthouse. To improve the user experience, I wanted at least 90% in all fields on all devices.
+  - User Validation 1. If the User inputs anything OTHER than "Y" or "N" then an invalid response is displayed to the user, and they are asked to input again.
 
-![Sign Up Page](assets/readme-images/features-signup-form.png)
-![Sign Up Page - Mobile](assets/readme-images/features-signup-form-mobile.png)
+![User Validation One](assets/readme-images/valid1.png)
 
 ***
 
-#### Submitted Form
+#### User Validation Two
 
-  - I won't expect the user to stay long on this page. Hence the simple design of a background colour and font, which is in keeping with the style of the website.
-  - The user wants to know we have received the form, and that they we welcome at training, therefore there are no visual distractions.
+  - User Validation 2. If the User inputs anything OTHER than "3", "4", or "5" then an invalid response is displayed to the user, and they are asked to input again.
 
-![Submitted Form](assets/readme-images/features-formsubmit.png)
-
+![User Validation Two](assets/readme-images/valid2.png)
+  
 ***
 
-#### Error 404
+#### User Validation Three
 
-  - I do not expect the user to stay on this page for long, nor should they! The page contains a link at the bottom with 'HERE!'. The letters are uppercase and underlined to exaggerate where the user has to click.
-  - Failing that, the navigation bar remains at the top of the page, allowing the user to click on any of the established links to return back to the content pages of the website.
+  - User Validation Three. If the user inputs anythin after than a letter, then the lives are displayed to the user, stating a life has not been taken away.
+  - The Iser is told that the input is invalid, and would they guess again.
 
-
-![Error 404](assets/readme-images/features-404.png)
-
-***
-
-### Features Left To Implement
-
-  Gallery of future tournaments/fun days. As the tournaments, and fun days, have not happened yet, they cannot be added onto the website. Once they have been, the gallery will use the Masonry design method.
+![User Validation Three](assets/readme-images/valid3.png)
   
 ***
 
 ## Technologies Used
 
 Languages
-  - [HTML5](https://en.wikipedia.org/wiki/HTML5)
-  - [CSS](https://en.wikipedia.org/wiki/CSS)
+  - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
   
 Frameworks and Libraries
   - [Am I Responsive?](http://ami.responsivedesign.is/)
-  - [Balsamiq](https://balsamiq.com/)
-  - [Coolors.co](https://coolors.co/)
-  - [Font Awesome](https://fontawesome.com/)
   - [GitBash](https://gitforwindows.org/)
   - [GitHub](https://github.com/)
-  - [Google Dev Tools](https://developer.chrome.com/docs/devtools/)
-  - [Google Fonts](https://fonts.google.com/)
-  - [Pexels](https://www.pexels.com/)
-  - [Responsive PX](http://www.responsivepx.com/)
-  - [Slack](https://slack.com/intl/en-se/)
-  - [TinyPNG](https://tinypng.com/)
-  - [Unsplash](https://unsplash.com/)
   - [VS Code](https://code.visualstudio.com/)
 
 ***

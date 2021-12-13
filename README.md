@@ -1,26 +1,24 @@
-# The English Football Club
+# Hangman
 
-The English Football Club's website is to promote their training sessions for children, between the ages of 7-10, living in Göteborg (Gothenburg), Sweden. The unique selling point of The English Football Club, is that all training sessions are held in English.
+This is a small project written in Python. It is the classic game of Hangman. It is a simple word guessing game in which the user guesses the mystery word, letter-by-letter.
 
-The site is targeted at parents of children who are looking for a sporting activity that will get their children outside and running and participating within teams. The site will display key information about the training sessions, prices, the coaches, and the location of said sessions. The site will also give parents the opportunity to sign their child up to participate.
+About Hangman -  [Hangman Wikipedia](https://en.wikipedia.org/wiki/Hangman_(game))
 
-Link to the live [Hangman - The Game](https://game-of-hang-the-man.herokuapp.com/)
+Link to the project -  [Hangman - The Game](https://game-of-hang-the-man.herokuapp.com/)
 
-![Responsive Mockup](assets/readme-images/responsive-mockup.png)
+![Responsive Mockup](assets/read_me_images/responsive_mockup.png)
 
 ***
 
 ## Table of Contents
   * [UX and UI Design](#ux-and-ui-design)
     * [Owner Goals](#owner-goals)
-    * [External User Goals](#external-user-goals)
-    * [User Stories](#user-stories)
+    * [User Goals](#user-goals)
     * [Potential Features to Use](#potential-features-to-use)
     * [Wireframes](#wireframes)
+    * [Flow Chart](#flowchart)
   * [Design](#design)
     * [Imagery](#imagery)
-    * [Colour Scheme](#colour-scheme)
-    * [Typography](#typography)
   * [Features](#features)
     * [Existing Features](#existing-features)
     * [Features Left To Implement](#features-left-to-implement)
@@ -40,78 +38,37 @@ Link to the live [Hangman - The Game](https://game-of-hang-the-man.herokuapp.com
 
 ## UX and UI Design
 
-The owner of the company tasked me with designing and implementing a colourful, snappy, and to the point website. I agreed that this was best fit for their, and their user needs. The company itself is self-explanatory. They host football training in English for children (company based in Sweden). The website needed to reflect this, and did not need to create an informational overload for the user of the website. The owner required a website to detail prices, locations, and for parents to sign their child up to join the fun.
-
-With this in mind, it was clear that the website required colourful imagery, bold colouring, and minimal text content. All content had to be 'to the point' and quickly at hand for the user.
+UX and UI Design is limited due to the catch all design for terminal based projects. 
 
 *** 
 
 ### Owner Goals
 
-- To allow users to sign their child up to join the training sessions.
-- To display their USP - The only English speaking football training in Göteborg (Gothenburg).
-- To display how quickly the company has developed in a short period of time.
-- To include a profile highlighting the credentials of the coaches.
-- To include the coaches mobile numbers in case of an emergency for existing users.
-- To display prices and any potential offers.
-- To show the times and location of the training sessions.
+- To deploy a working game of Hangman that validates user input.
+- To create a slight variation of the game. To allow for different degrees of difficulty.
+- To challenge the user.
+
 
 ***
 
-### External User Goals
+### User Goals
 
-- To sign up their children for the football training sessions.
-- Read about the company and coaches credentials.
-- See the cost of the training sessions.
-- See the location of the training sessions.
-- Quick access to the coaches mobile numbers in case of emergency.
+- Understand the game with ease.
+- Option to chose the level of difficulty level of the game.
+- Easy to user and navigate.
 
 ***
 
-### User Stories
-
-- As a user of the website, I want to be able to easily navigate around the website.
-- As a user of the website, I want to be able to sign up my child for the training sessions.
-- As a user of the website, I want to find out about the coaches running the website.
-- As a user of the website, I want to know the prices of the training sessions.
-- As a user of the website, I want to know where the training sessions are located.
-
-***
-
-### Potential Features to Use
-
-- A sign-up form for the user and owner to receive information regarding new members to the training sessions. 
-- Profiles of the coaches.
-- Google Maps embedded to show the location of the training sessions.
-- Links to different social media related to the club.
-
-***
 
 ### Wireframes
 
-All three of my wireframes are very basic mock-ups. I was concerned with creating the layout, rather than a content. 
+Due to the game being played within the terminal, I did not use any design wireframes as the design is restricted to that of the terminal.
 
-I originally drew my mock-ups by hand. I then created a digital mock-up using Balsamiq.
+***
 
-<details>
-  <summary>Desktop Wireframe</summary>
+### Flowchart
 
-![Desktop Wireframe](assets/readme-images/wireframes-desktop.png)
-
-</details>
-
-<details>
- <summary>Tablet Wireframe</summary>
-
-![Tablet Wireframe](assets/readme-images/wireframes-tablet.png)
- 
- </details>
-
-<details>
- <summary>Mobile Wireframe</summary>
-
-![Mobile Wireframe](assets/readme-images/wireframes-mobile.png)
-</details>
+FLOWCHART LOGIC
 
 ***
 
@@ -119,50 +76,9 @@ I originally drew my mock-ups by hand. I then created a digital mock-up using Ba
 
 ### Imagery
 
-I sourced my imagery from two different stock image websites, Unsplash and Pexels, respectively. I reduced the file size of my images using TinyPNG, a compression website. I used the .png image file type to maintain a high image quality whilst reducing the size of each individual image file. This will improve the speed and loading times of the website.
+I used ASCII Art as the imagery within this project.
 
-I wanted images that best represented football sessions for children between 7 and 10 years old. I wanted to use vibrant images. I wanted fun images. I wanted sunny images. I wanted colourful images. Initially, I opted out of using images that clearly showed the faces of any children. This was a personal ethical preference, as I didn't think it sat right. 
-
-The images collated helped to further present the story of the website. They visually demonstrate a fun and vibrant social gathering for children, where they will take part in football training sessions.
-
-The colours in the imagery helped with the final decision of my colour scheme.
-
-***
-
-### Colour Scheme
-
-In choosing my colour palette, I used the website ' Coolors.co'.
-
-I wanted colours that had a strong relationship with football teams traditional colours. 
-
-Initially, I could not settle between a red or blue colour pallette. I settled with blue for two reasons. The first being that red is quite a powerful colour. Visually, it can be rather distracting and make the website less accessible for all users. Secondly, a lot of the imagery I used had powerful blue colours, with white being secondary. To help maintain a great visual design I opted for blue.
-
-![Colour Palette](assets/readme-images/design-colour-scheme.png/)
-
-I felt that these colours best represented a 'warmer' blue, had they had a strong association with football. These colours provided great visual readability of all aspects of the website. This is a good collection of background colours, text colours, and overlay styled colours.
-
-  - '1B264F'
-    - Main background colour. Used for the logo and block backgrounds.
-  - '274690'
-    - Text overlay colour.
-  - '576CA8'
-    - Navigation bar colour.
-  - 'F5F3F5'
-    - Text/font colour. 
-  - '302B27'
-    - Borders 
-
-***
-
-### Typography
-
-I used Google Fonts to select my fonts.
-
-![Typography](assets/readme-images/design-font-family.png)
-
-I like sleek and minimalist font styles. I narrowed down my search for these style of fonts. The font that instantly stood out was 'Raleway'. I used Google's popular pairings with 'Raleway'. Upon testing each selection, I settled on pairing 'Raleway' with 'Montserrat'.
-
-The two fonts provided a nice and subtle difference. Due to its default font-weight, 'Montserrat' would be fantastic to use for the logo and each heading on the website. 'Raleway', with its slim minimalist feel, would be great to use for the main content of the website.
+[ASCII Art Wikipedia](https://en.wikipedia.org/wiki/ASCII_art)
 
 ***
 
@@ -172,42 +88,37 @@ The two fonts provided a nice and subtle difference. Due to its default font-wei
 
 #### Logo
   
-  - The logo is a simple font based logo to keep with a more minimalist and sleek design. The logo also doubles up as a navigational link, to allow the user to always return to the home page.
+  - The Logo is the word Hangman designed in ASCII Art
 
-![Logo](assets/readme-images/features-logo.png)
+![Logo](assets/readme-images/logo.png)
  
  ***
 
-#### Navigation Bar
+#### Menu
   
-  - The navigation bar is featured on all pages of the website. The main page of the website is a single page website, which the navigation links will help the user    jump down to each specific section. 
-  - The sections include, 'Home', 'About Us', 'Coaches and Contact Us', 'Prices', 'Training Times', and 'Sign-Up'. The 'Sign-Up' directs the user to a new page. The navigation bar retains the same position and style on all pages, allowing for good accessibility.
-  - On devices smaller than tablet, the nav bar reverts to a column. This is to allow the user better access to click on each link. This style remains the same on all pages, whilst using smaller devices.
+  - The Menu is loaded, with the logo, in the terminal.
+  - It asks the user if they would like to the play the game or not.
 
-![Nav Bar](assets/readme-images/features-navbar.png)
-![Nav Bar Mobile](assets/readme-images/features-navbar-mobile.png)
+![Menu](assets/readme-images/menu.png)
 
 ***
 
-#### Hero Image
+#### End Game
 
- - The landing image is of a child and young adult (relaxing on a sports field. The image itself is blurry, which gives a great effect and the image is really striking when you first look at the website. Also, it helps with my ethical stance of not using clear imagery of children.
- - The image has great highlights. The relaxed atmosphere the club is taking to their football training sessions. It also has bright vivid colours that compliment the blue colour scheme.
- - The main heading of the hero image is a banner going across the top. This is to tell the user what this website is about instantly. It also tells the ages and the location. Straight away the user knows what the website is about.
+ - If the user chooses not to play the game. Then we say goodbye to the user and the game will end.
 
 
-![Hero Image](assets/readme-images/features-hero.png)
+![End Game](assets/readme-images/endgame.png)
 
 ***
 
-#### About Us
+#### Play Game
 
-  - All headers on the website follow the same design pattern, which is the same colour tones as the navigation bar. A light blue with white font. This is to forge a partnership between the nav bar and the headers of the same section. It provides great design symmetry.
-  - This provides the user with quick facts about The English Football Club. It establishes the success the club already has had allowing a sense of ease for the user.
-  - The second is a block background with font. I wanted to keep a minimalist approach, with straight to the point text. Information is clear, concise and can be read easily.
-  - The icons are are great way to break up the quick-fire facts. Also it adds an elements of fun to the website.
+  - If the user chose to play the game, they are then asked if they would like to play with three, four, or a five lettered word.
+  - The size of the word is repeated to the user.
+  - Then the game begins, asking the user to guess a letter.
 
-![About Us](/assets/readme-images/features-aboutus.png)
+![Play Game](/assets/readme-images/playgame.png)
 
 ***
 

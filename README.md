@@ -242,13 +242,42 @@ I asked several people to be 'beta' testers, who tried their best to completely 
 
 ## Deployment
   
-  - The site was deployed to GitHub pages. The steps to deploy are as follows:
-  - In the GitHub repository, navigate to the Settings tab
-    - From the source section drop-down menu, select the Master Branch
-    - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+### Clone a GitHub repository
+To make a local copy of this project you can make a clone by following these steps:
+- Log in to GitHub and find the [repository](https://github.com/TotallySly/portfolio_project_three).
+- Above the list of files click on the code button. By the https address there is a copy symbol, click on that.
+- Open Git Bash
+- Change the current working directory to the location where you want the cloned directory.
+- Type "git clone", and paste in the copied URL.
+- Press Enter to create your local clone.
+
+### Deploy to Heroku
+This site was deployed to Heroku Apps. To deploy a site, follow these steps:
+- Make sure you have correct requirements.txt and Procfile committed and pushed before moving on with the deployment.
+- Log in to [Heroku apps](https://heroku.com/)
+- On the Heroku dashboard go to the "New" menu and choose "Create new app".
+- Give the app a name that needs to be unique, select your region and click "Create app".
+- Now the new app's dashboard is opened. Click on the settings tab.
+- When using this template from Code Institute a Config Var has to be set.
+This is done by scrolling down to the Config Vars section and pushing "Reveal Config Vars".
+- In the KEY field type PORT (with capital letters) and in the VALUE field type 8000 and push "Add".
+- Scroll down to the Buildpacks section and push "Add build pack".
+- It is important to select the buildpacks in the correct order so start with selecting python and click "Save changes". Then add another buildpack and then select nodejs.
+- In the Deployment section select GitHub and click on "Connect to Github".
+- Search for the Github repository you want to connect and click connect.
+- Scroll down to the deploy sections. Choose either automatic or manual deployment. Click on Enable Automatic Deploys or Deploy Branch depending on your choice. 
+- Wait until the app is built and the View button appears.
+- Click on "View" to open the browser page with your app.
 
 - The link:
-  - [The English Football Club - Website](https://totallysly.github.io/portfolio-project-one/)
+  - [Hangman](https://game-of-hang-the-man.herokuapp.com/)
+
+
+***
+The deployment section was taken from [Odden69](https://github.com/Odden69/nonogram_game/blob/main/README.md)
+
+Fantastic step by step process. The steps were crystal clear and I felt could not be improved upon.
+***
 
 ***
 
@@ -256,47 +285,24 @@ I asked several people to be 'beta' testers, who tried their best to completely 
   
 ### Content
 
-  All written content is purely fictional. I created the written content myself as the company is also fictional. 
-  - The training section was inspired by a section of tutorial project, [Love Running](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/tree/main/05-meetup-times), via the Code Institute.
-  - A lot of research was placed on [Stack Overflow](https://stackoverflow.com/), [W3Schools](https://www.w3schools.com/), [Mozilla Developer](https://developer.mozilla.org/en-US/)
-  - I implemented a 'Scroll to Top Button' - [Scroll to Top Button](https://www.youtube.com/watch?v=Vef9bxTilCU&ab_channel=DarkCode)
-  - Help with Code for the form [Form Code](https://dev.to/uma/responsive-form-using-html-and-css-4l59)
-  - [Position Absolute and Relative](https://thoughtbot.com/blog/positioning#position)
-  -  [CSS Tricks Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
-  -  [Which CSS Units to Use?](https://gist.github.com/basham/2175a16ab7c60ce8e001)
-  -  [Responsive Google Maps](https://blog.duda.co/responsive-google-maps-for-your-website)
-  -  [Media Queries](https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile)
-  - In addition several YouTube videos:
-      - [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified/playlists) (Flexbox, Absolute/Relative Position).
-      - [Kevin Powell](https://www.youtube.com/kepowob). (Flexbox, Absolute/Relative Position)
-      - [Minim](https://www.youtube.com/watch?v=VX_Dghv65Vk&list=PL4cTxE4s2XIYJL6uPQUwMt25M70gPl-O6&index=14&ab_channel=Minim). (Sign-Up form).
-  - The README Template was a mix of Code Institute's README Template for [Love Running](https://github.com/Code-Institute-Solutions/readme-template) and the excellent website and README by [Aofie Smith](https://github.com/aoifesmith/evanandanna/blob/main/README.md)
+I took inspiration for this Hangman game from 
+[Angela Yu - 100 Days of Python](https://www.udemy.com/course/100-days-of-code/) - Course on Udemy.
 
-  - Icons where via the amazing website - [Font Awesome](https://fontawesome.com/).
-  - The colour palette was from [Coolors](https://coolors.co/)
-  - Additional Responsive Tool [Responsive PX](http://www.responsivepx.com/)
-  - And of course, Google Dev Tools.
+Her tutorial, is a more basic version of the my version of Hangman. I adapted the process, and logic, so the user can choose how mnay letters in a word they would like to play with.
+
+I used her version of Hangman as point of reference, adapting the code for better understanding of how my logic works.
 
 ***
 
 ### Media
 
-  - My images were from two stock image websites: [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/).
-
-
- - Hero Image [Pixabay](https://www.pexels.com/@pixabay)
- - Coaches Background Image [Ralph (Ravi) Kayden](https://unsplash.com/@ralphkayden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-- Coach Richards Image [Midas Hofstra](https://unsplash.com/@midashofstra)
-- Coach Edwards Image [Ben Den Engelsen](https://unsplash.com/@benjeeeman)
-- Training Times Image [Mike](https://www.pexels.com/@mike-468229)
-- Sign-Up Background Image [Kampus](https://www.pexels.com/@kampus)
-  
+ - The ASCII Art was taken from Angela Yu's 100 Days of Pyhon challenge.
 ***
 
 ### Acknowledgements
 
-I would like to thank my Code Institute mentor Antonija Simic for her help and guidance during this project.
+I would like to thank website Udemy, Angela Yu and the creation of her 100 Days of Python course. Without which I would not be able to understand Python.
 
-I would like to thank the Code Institute Slack community for all their support and help with various general questions I have asked thus far. Specifically to David_Bowers5p and Aoife Smith_5p for their Peer-Code-Review feedback, and Eventyret_Mentor for answering a lot of my questions. 
+I know I am at the early process of learning Python and my code is somewhat 'raw'. However, I initially feared the snake, but I write this absolutely charmed. I loved learning Python and I really want to continue this. I found it easier and more logical than JavaScript. Using the terminal and working with User Inputs was amazing. I love the retro feel and the ASCII Art. Python is something I certainlly want to dive deeper in with.
 
 ***

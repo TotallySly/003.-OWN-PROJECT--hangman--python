@@ -67,7 +67,8 @@ Due to the game being played within the terminal, I did not use any design wiref
 
 ### Flowchart
 
-FLOWCHART LOGIC
+![Flowchart](assets/readme-images/hangman1.png)
+
 
 ***
 

@@ -6,7 +6,7 @@ About Hangman -  [Hangman Wikipedia](https://en.wikipedia.org/wiki/Hangman_(game
 
 Link to the project -  [Hangman - The Game](https://game-of-hang-the-man.herokuapp.com/)
 
-![Responsive Mockup](assets/read_me_images/responsive_mockup.png)
+![Responsive Mockup](assets/readme-images/responsive_mockup.png)
 
 ***
 

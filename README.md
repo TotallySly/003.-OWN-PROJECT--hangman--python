@@ -26,7 +26,6 @@ Link to the project -  [Hangman - The Game](https://game-of-hang-the-man.herokua
   * [Testing](#testing)
     * [Validator Testing](#validator-testing)
     * [Manual Testing](#manual-testing)
-    * [Accessibility](#accessibility)
     * [Bugs](#unfixed-bugs)
   * [Deployment](#deployment)
   * [Credits](#credits)
@@ -191,17 +190,33 @@ I used ASCII Art as the imagery within this project.
   
 ***
 
+#### Features Left To Implement
+
+  - More sized words! I had a time constraint due to having three weeks to learn Python for this hand-in. If I had more time I would have words varying in different sizes, maybe going up to 10. Allowing for different difficulties.
+  - Random word feature. Am additional list where I take all different sized words to produce a more 'traditional' hangman game.
+  - Scoreboard. If the user would like to keep playing, allowing a high score feature? Or a score feature that gives higher points the quicker you guess the word.
+
 ## Technologies Used
 
 Languages
   - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
+## Technologies Used
+
+  - [GitPod](https://gitpod.io/)
+    - The online IDE was used to write the code and testing within the terminal.
+  - [Git](https://git-scm.com/)
+    - Was used for version control.
+  - [GitHub](https://github.com/)
+    - As a repository and storing the projects code.
+  - [Heroku](https://www.heroku.com/home)
+    - Used as deployment for the game.
+  - [Lucidchart](https://www.lucidchart.com/pages/)
+    - To produce the flowchart of the game's logic.
   
 Frameworks and Libraries
-  - [Am I Responsive?](http://ami.responsivedesign.is/)
-  - [GitBash](https://gitforwindows.org/)
-  - [GitHub](https://github.com/)
-  - [VS Code](https://code.visualstudio.com/)
+ - [Code Institute - Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+ - All Python Modules used were the internal Python Libraries/Modules. These were the Random and String Module. 
 
 ***
 
@@ -209,162 +224,21 @@ Frameworks and Libraries
 
 ### Validator Testing
 
-  HTML
-    <details>
-      <summary>'index.html' - Zero Errors</summary>
-      ![index.html](assets/readme-images/w3schools-index-validator.png)
-    </details>
-    <details>
-    <summary>'sign-up.html' - Zero Errors</summary>
-    ![sign-up.html](assets/readme-images/w3schoold-sign-up-validator.png)
-    </details>
-        <details>
-    <summary>'form-submit.html' - Zero Errors</summary>
-    ![form-submit.html](assets/readme-images/w3schools-form-submit-validator.png)
-    </details>
-            <details>
-    <summary>'404.html' - Zero Errors</summary>
-    ![404.html](assets/readme-images/w3schoold-404-validator%20.png)
-    </details>
+![PEP8 - Online Check](assets/readme-images/validator.png)
 
-
-
-  CSS
-    <details>
-      <summary>'styles.css' - Zero Errors</summary>
-      ![styles.css](assets/readme-images/w3schools-css-validator.png)
-    </details>
-    <details>
-      <summary>'styles.css' - 1 Warning</summary>
-      ![One Warning](assets/readme-images/w3schools-css-warning.png)
-    </details>
-
-  This is due to importing Google Fonts onto the CSS stylesheet. The W3Schools Jigsaw Validator does not check imported style sheets.
 
 ***
 
 ### Manual Testing
 
-The site was manually tested throughout production. This included ensuring 
-   - All navigation links corresponded to the correct part of the website. 
-   - The sign-up form had the necessary required attributes, ensuring all data needed was submitted.
-     - The 'sign-up!' button directed to the correct page, telling the user that we had received their data.
-   - A working Error 404 page, with a link directing the user back to the homepage.
+The site was manually tested throughout production. Every function, or additional line of code was printed to the terminal to check if the code was running correctly.
 
-Responsive testing was conducted on a Windows Laptop, iPhone 7, iPhone 7 plus, and a Samsung Galaxy Tab A8. As these devices are limited to their screen sizes. I also tested the responsiveness using Google Dev Tools and [Responsive PX](http://www.responsivepx.com/).
+I asked several people to be 'beta' testers, who tried their best to completely break the game. I used people who do not code as I believe these people are always the best to test projects on.
 
-Testing was conducted on Google Chrome, Mozilla Firefox and Safari web browsers.
-
-After website completion, I submitted the website to Code Institute's Slack Community, specifically the 'Peer-Code-Review' channel. 
-
-***
-
-### Accessibility
-
-The website passes on all aspects of accessibility and colour contrast. 
-
-Lighthouse Testing
-
-  <details>
-  <summary>'index.html' - Desktop</summary>
-
-  ![index Desktop](assets/readme-images/lighthouse-index-desktop.png)
-  </details>
-
-  <details>
-  <summary>'index.html' - Mobile</summary>
-
-  ![index Mobile](assets/readme-images/lighthouse-index-mobile.png)
-  </details>
-
-  <details>
-  <summary>'sign-up.html' - Desktop</summary>
-
-  ![signup Desktop](assets/readme-images/lighthouse-signup-desktop.png)
-  </details>
-
-  <details>
-  <summary>'sign-up.html' - Mobile</summary>
-
-  ![signup Mobile](assets/readme-images/lighthouse-signup-mobile.png)
-  </details>
-
-  <details>
-  <summary>'formsubmit.html' - Desktop</summary>
-
-  ![formsubmit Desktop](assets/readme-images/lighthouse-formsubmit-desktop.png)
-  </details>
-
-  <details>
-  <summary>'formsubmit.html' - Mobile</summary>
-
-  ![formsubmit Mobile](assets/readme-images/lighthouse-formsubmit-mobile.png)
-  </details>
-
-  <details>
-  <summary>'404.html' - Desktop</summary>
-
-  ![404 Desktop](assets/readme-images/lighthouse-404-desktop.png)
-  </details>
-
-  <details>
-  <summary>'404.html' - Mobile</summary>
-
-  ![404 Mobile](assets/readme-images/lighthouse-404-mobile.png)
-  </details>  
-
-<br>
-Wave
-
-  <details>
-  <summary>'index.html'</summary>
-
-  ![index Mobile](assets/readme-images/wave-index.png)
-  </details>
-
-  <details>
-  <summary>'sign-up.html'</summary>
-
-  ![signup](assets/readme-images/wave-signup.png)
-  </details> 
-
-  <details>
-  <summary>'form-submit.html'</summary>
-
-  ![formsubmit](assets/readme-images/wave-formsubmit.png)
-  </details>
-
-  <details>
-  <summary>'404.html'</summary>
-
-  ![404](assets/readme-images/wave-404.png)
-  </details>  
-  
 ***
 
 ### Bugs
 
-I had a lot of issues with the Sign-Up Form. It took me a long time to come to a final solution of having a fully responsive form for all media devices.
-
-- Bug 1 - Hero Image
-  I had issues with my original hero image. Due to context of the image, and the pixel size, it created an off-balance look. It overcome this, I opted for a different hero image. Upon speaking with the test users and owners, they agreed that the new hero image was better for the overall story of the website.
-
-- Bug 2 - Coaches & Contact Us
-  I had issues with the content for each coach. I solved this by using Flexbox. I also opted to remove the coaches' facts on mobile devices. This is so contact information is clearly seen by the user. 
-
- - Bug 2 - Sign-Up Form
-  Position: Relative' and 'Position: Absolute'. For Desktop and Tablets there was no issue. However, on mobile devices, the sign-up form was off the page, or loading over the footer. I solved this issue by removing the background image and using a background colour instead. This also help to dramatically increase the performance of on mobile devices. I also made a smaller font-size, and managed to move the Position: Absolute toward the left side.
-
- - Bug 3 - Navigation Bar
-  I had issues regarding the navigation bar for mobile devices. I used Flexbox in order to create the nav bar, however, on a mobile device it looked too 'busy' with messy ordering. I opted to change the nav bar to a column on mobile devices. This was a better representation. Using two different iPhones, I was able to use the links without any difficulty. This could be a future bug, as I note that it was the Nav bar that hindered my 100% scores to mid 90s on Lighthouse. Going forward, I would like to implement a 'Hamburger' Nav bar for Mobile devices. Upon research, JavaScript is required for this. After immersing myself into JavaScript, this bug will be corrected, and as such achieve 100% on Lighthouse.
-
-- Bug 4 - W3Schools Validator
-  After running my code through the validator. It returned several 'typos' within the code itself. This included:
-    - Unclosed Divs.
-    - Divs within the Fieldset and Legend
-    - 'Di' being typed instead of Divs.
-
-***
 
 ## Deployment
   

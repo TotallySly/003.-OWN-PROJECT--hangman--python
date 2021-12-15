@@ -54,7 +54,7 @@ UX and UI Design is limited due to the catch all design for terminal based proje
 
 - Understand the game with ease.
 - Option to chose the level of difficulty level of the game.
-- Easy to user and navigate.
+- Easy to use and navigate.
 
 ***
 
@@ -124,7 +124,7 @@ I used ASCII Art as the imagery within this project.
 
 #### In Game Play (Incorrect)
 
-  - After the user makes inputs a guess, a list of guessed letters is shown to the user. This allows the user to see which letters they have guessed throughout the game. This is displayed with the letter is NOT in the word.
+  - After the user makes inputs a guess, a list of guessed letters is shown to the user. This allows the user to see which letters they have guessed throughout the game. This is displayed if the letter is NOT in the word.
 
   - The amount of lives left is displayed.
 
@@ -141,7 +141,7 @@ I used ASCII Art as the imagery within this project.
   - The amount of lives are still displayed to the user.
   - The ASCII Art of the stages of Hangman are displayed.
   - A list of guessed letters is still displayed to the user.
-  - Asks the User to guess the letter.
+  - Asks the User to guess the next letter.
 
 ![Prices](assets/readme-images/ingame-correct.png)
 
@@ -184,8 +184,8 @@ I used ASCII Art as the imagery within this project.
 
 #### User Validation Three
 
-  - User Validation Three. If the user inputs anythin after than a letter, then the lives are displayed to the user, stating a life has not been taken away.
-  - The Iser is told that the input is invalid, and would they guess again.
+  - User Validation Three. If the user inputs anything other than a letter, then the lives are displayed to the user, stating a life has not been taken away.
+  - The User is told that the input is invalid, and they need to guess again.
 
 ![User Validation Three](assets/readme-images/valid3.png)
   
@@ -239,6 +239,25 @@ I asked several people to be 'beta' testers, who tried their best to completely 
 ***
 
 ### Bugs
+Line Length on several lines.
+
+This was due to my inexperience using Python and lack of knowledge of line length. This is solved using searching Stack Overflow. The code was shortened by wrapping the code within parenthesis and writing the code on a new line.
+
+
+
+
+Displaying Lives in conjunction with ASCII Art.
+
+I was making simple mistakes. At first I hadn't linked the hangman_words.py file correctly. Secondly, I was trying to chose which type of For Loop would be best to proceed with.
+
+
+
+
+Generating Random Word, and Checking Random Word.
+
+Again, absolute school boy error. I had changed the code within the Four Letter Function (thinking I was changing the code within the Three Letter Function), and I was testing the code by playing Three Letter Word and seeing absolutely no code changes whatsoever! Sometimes just going to boil the kettle for a cup of tea makes a world of difference!
+
+
 
 
 ## Deployment
@@ -289,7 +308,7 @@ Fantastic step by step process. The steps were crystal clear and I felt could no
 I took inspiration for this Hangman game from 
 [Angela Yu - 100 Days of Python](https://www.udemy.com/course/100-days-of-code/) - Course on Udemy.
 
-Her tutorial, is a more basic version of the my version of Hangman. I adapted the process, and logic, so the user can choose how mnay letters in a word they would like to play with.
+Her tutorial, is a more basic version of the my version of Hangman. I adapted the process, and logic, so the user can choose how many letters in a word they would like to play with.
 
 I used her version of Hangman as point of reference, adapting the code for better understanding of how my logic works.
 
@@ -304,6 +323,6 @@ I used her version of Hangman as point of reference, adapting the code for bette
 
 I would like to thank website Udemy, Angela Yu and the creation of her 100 Days of Python course. Without which I would not be able to understand Python.
 
-I know I am at the early process of learning Python and my code is somewhat 'raw'. However, I initially feared the snake, but I write this absolutely charmed. I loved learning Python and I really want to continue this. I found it easier and more logical than JavaScript. Using the terminal and working with User Inputs was amazing. I love the retro feel and the ASCII Art. Python is something I certainlly want to dive deeper in with.
+I know I am at the early process of learning Python and my code is somewhat 'raw'. However, I initially feared the snake, but I write this absolutely charmed. I loved learning Python and I really want to continue this. I found it easier and more logical than JavaScript. Using the terminal and working with User Inputs was amazing. I love the retro feel and the ASCII Art. Python is something I certainly want to dive deeper in.
 
 ***
